@@ -1,0 +1,28 @@
+Source: node-etag
+Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>
+Uploaders: Yadd <yadd@debian.org>
+Section: javascript
+Testsuite: autopkgtest-pkg-nodejs
+Priority: optional
+Build-Depends:
+ debhelper-compat (= 13)
+ , mocha <!nocheck>
+ , node-safe-buffer <!nocheck>
+ , node-seedrandom <!nocheck>
+ , dh-sequence-nodejs
+Standards-Version: 4.6.0
+Vcs-Browser: https://salsa.debian.org/js-team/node-etag
+Vcs-Git: https://salsa.debian.org/js-team/node-etag.git
+Homepage: https://github.com/jshttp/etag
+Rules-Requires-Root: no
+
+Package: node-etag
+Architecture: all
+Depends:
+ ${misc:Depends}
+Description: entity tag creator for - Node.js module
+ This package provides a fast and strong creator of entity tags,
+ used in HTTP Etag response header to determine change in content
+ of a resource at a given URL.
+ .
+ Node.js is an event-based server-side JavaScript engine.
